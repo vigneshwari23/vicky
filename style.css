@@ -107,6 +107,11 @@ section {padding: 80px 10%; text-align: center;}
   line-height: 1.5;
 }
 
+
+/* Contact */
+.contact p {margin: 10px 0; font-size: 1.1em;}
+.contact i {color:#00d2ff; margin-right: 10px;}
+
 /* Footer */
 footer {
   background: #000; text-align: center; padding: 20px;
