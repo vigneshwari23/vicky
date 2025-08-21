@@ -1,305 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vigneshwari Pakkirisami Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vigneshwari Pakkirisami Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+  <!-- AOS Animation -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
 </head>
 <body>
-    <header>
-        <a href="" class="brand" data-aos="zoom-in" data-aos-duration="1000">Vigneshwari Pakkirisami</a>
-        <div class="menu-btn"></div>
-        <div class="navigation">
-            <a href="#main" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">Home</a>
-            <a href="#about" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">About</a>
-            <a href="#skills" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">Skills</a>
-            <a href="#projects" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">Projects</a>
-            <a href="#experience" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">Experience</a>
-            <a href="#contact" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600">Contact</a>
-        </div>
-    </header>
+  <!-- Header -->
+  <header>
+    <a href="#" class="brand">Vigneshwari</a>
+    <nav class="navigation">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#experience">Experience</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
 
-    <section class="main" id="main">
-        <div class="content">
-            <h2 data-aos="fade-right" data-aos-duration="1000" data-aos-delay="800">
-                Hello, I'm <br><span>Vigneshwari Pakkirisami</span>
-            </h2>
-            <div class="animated-text" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="900">
-                <h3>DevOps Engineer</h3>
-                <h3>AWS Cloud Specialist</h3>
-                <h3>Python Developer</h3>
-            </div>
-            <a href="#about" class="btn" data-aos="zoom-out" data-aos-duration="1000" data-aos-delay="1000">More About Me</a>
-            <div class="media-icons">
-                <a href="https://www.linkedin.com/in/vigneshwari-pakkirisami/" target="_blank" data-aos="fade-in" data-aos-duration="1000" data-aos-delay="1200">
-                    <i class="fab fa-linkedin"></i>
-                </a>
-                <a href="mailto:vigneshwaripakirisamy@gmail.com" data-aos="fade-in" data-aos-duration="1000" data-aos-delay="1300">
-                    <i class="fas fa-envelope"></i>
-                </a>
-            </div>
-        </div>
-    </section>
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <div class="content" data-aos="fade-up">
+      <h1>Hello, I'm <span>Vigneshwari Pakkirisami</span></h1>
+      <h2><span id="typing"></span></h2>
+      <a href="#about" class="btn">More About Me</a>
+      <div class="social-icons">
+        <a href="https://www.linkedin.com/in/vigneshwari-pakkirisami/" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="mailto:vigneshwaripakirisamy@gmail.com"><i class="fas fa-envelope"></i></a>
+      </div>
+    </div>
+  </section>
 
-    <!-- About Section -->
-    <section class="about" id="about">
-        <div class="title reveal">
-            <h2 class="section-title" data-aos="fade-up" data-aos-duration="1000">About Me</h2>
-        </div>
-        <div class="column col-right reveal">
-            <h2 class="content-title" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">
-                Welcome! I'm Vigneshwari Pakkirisami
-            </h2>
-            <div class="paragraph-text" data-aos="flip-up" data-aos-duration="1000" data-aos-delay="400">
-                <p>
-                    A Master of Computer Science professional with 4 years of strong IT experience. I bring a versatile skill set encompassing AWS cloud services, CI/CD processes, Docker, Kubernetes, and front-end technologies such as Python, Big Data, HTML, CSS, JavaScript, and TypeScript.
-                </p>
-                <p>
-                    I effectively utilize AWS cloud services for seamless infrastructure management, design and implement CI/CD pipelines, and orchestrate containerized applications for enhanced scalability and management. My hands-on experience with Docker and Kubernetes, combined with proficiency in scripting and troubleshooting, positions me as a valuable asset for modern development and cloud projects.
-                </p>
-            </div>
-            <a href="#skills" class="btn" data-aos="zoom-out-left" data-aos-duration="1000" data-aos-delay="600">See My Skills</a>
-        </div>
-    </section>
+  <!-- About -->
+  <section class="about" id="about">
+    <h2 class="title">About Me</h2>
+    <p data-aos="fade-right">
+      I am a Python Developer & DevOps Engineer with 4+ years of experience building scalable applications and automating deployments. Skilled in AWS, Docker, Kubernetes, Terraform, CI/CD pipelines, and scripting.
+    </p>
+  </section>
 
-    <!-- Skills Section -->
-    <section class="skills" id="skills">
-        <div class="title">
-            <h2 class="section-title" data-aos="fade-up" data-aos-duration="1000">Skills & Tools</h2>
-        </div>
-        <div class="content">
-            <div class="column col-left">
-                <h2 class="content-title" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="200">Technical Skills</h2>
-                <ul class="paragraph-text" data-aos="flip-down" data-aos-duration="1000" data-aos-delay="300">
-                    <li><strong>Cloud Technologies:</strong> AWS (EC2, S3, Load Balancers)</li>
-                    <li><strong>Networking & OS:</strong> TCP/IP, DNS, Routing, Switching, Firewalls</li>
-                    <li><strong>Scripting:</strong> Python, Shell, Perl</li>
-                    <li><strong>DevOps:</strong> CI/CD, Docker, Kubernetes</li>
-                    <li><strong>IaC:</strong> Terraform, CloudFormation</li>
-                    <li><strong>Technical Troubleshooting:</strong> Debugging and resolving issues across diverse systems</li>
-                </ul>
-                <a href="#projects" class="btn" data-aos="zoom-in-right" data-aos-duration="1000" data-aos-delay="400">See Projects</a>
-            </div>
-            <div class="column col-right">
-                <div class="bar">
-                    <div class="info" data-aos="flip-up" data-aos-duration="1000" data-aos-delay="100">
-                        <span>AWS Cloud Services</span>
-                        <span>90%</span>
-                    </div>
-                    <div class="line html" data-aos="zoom-in-right" data-aos-duration="1000" data-aos-delay="140"></div>
-                </div>
-                <div class="bar">
-                    <div class="info" data-aos="flip-up" data-aos-duration="1000" data-aos-delay="200">
-                        <span>Python & Big Data</span>
-                        <span>85%</span>
-                    </div>
-                    <div class="line css" data-aos="zoom-in-right" data-aos-duration="1000" data-aos-delay="240"></div>
-                </div>
-                <div class="bar">
-                    <div class="info" data-aos="flip-up" data-aos-duration="1000" data-aos-delay="300">
-                        <span>CI/CD & DevOps</span>
-                        <span>80%</span>
-                    </div>
-                    <div class="line javascript" data-aos="zoom-in-right" data-aos-duration="1000" data-aos-delay="340"></div>
-                </div>
-                <div class="bar">
-                    <div class="info" data-aos="flip-up" data-aos-duration="1000" data-aos-delay="400">
-                        <span>Docker & Kubernetes</span>
-                        <span>80%</span>
-                    </div>
-                    <div class="line python" data-aos="zoom-in-right" data-aos-duration="1000" data-aos-delay="440"></div>
-                </div>
-                <div class="bar">
-                    <div class="info" data-aos="flip-up" data-aos-duration="1000" data-aos-delay="500">
-                        <span>Infrastructure as Code</span>
-                        <span>75%</span>
-                    </div>
-                    <div class="line php" data-aos="zoom-in-right" data-aos-duration="1000" data-aos-delay="540"></div>
-                </div>
-            </div>
-        </div>
-    </section>
+  <!-- Skills -->
+  <section class="skills" id="skills">
+    <h2 class="title">Technical Skills</h2>
+    <div class="bars">
+      <div class="bar"><span>Python (Flask, FastAPI, Pandas, NumPy)</span><div class="progress" style="width:90%"></div></div>
+      <div class="bar"><span>AWS Cloud (EC2, S3, IAM, Lambda, RDS, CloudWatch, EKS)</span><div class="progress" style="width:90%"></div></div>
+      <div class="bar"><span>DevOps (CI/CD, Jenkins, GitHub Actions, GitLab CI/CD)</span><div class="progress" style="width:85%"></div></div>
+      <div class="bar"><span>Docker & Kubernetes</span><div class="progress" style="width:85%"></div></div>
+      <div class="bar"><span>Infrastructure as Code (Terraform, CloudFormation, Ansible)</span><div class="progress" style="width:80%"></div></div>
+      <div class="bar"><span>Databases (MySQL, PostgreSQL, SQL Server, MongoDB)</span><div class="progress" style="width:75%"></div></div>
+      <div class="bar"><span>Big Data & Messaging (PySpark, RabbitMQ, Apache Kafka, Spark)</span><div class="progress" style="width:70%"></div></div>
+      <div class="bar"><span>Testing & Security (PyTest, SonarQube, Trivy, Selenium, Postman)</span><div class="progress" style="width:70%"></div></div>
+      <div class="bar"><span>Monitoring & Logging (Prometheus, Grafana, ELK Stack)</span><div class="progress" style="width:65%"></div></div>
+      <div class="bar"><span>Web Tech (JavaScript, TypeScript, HTML5, CSS3, React.js)</span><div class="progress" style="width:65%"></div></div>
+      <div class="bar"><span>Other Tools (BeautifulSoup, Scrapy, Fabric, Linux/Unix)</span><div class="progress" style="width:70%"></div></div>
+    </div>
+  </section>
 
-    <!-- Projects Section -->
-    <section class="services" id="projects">
-        <div class="title">
-            <h2 class="section-title" data-aos="fade-up" data-aos-duration="1000">DevOps Project</h2>
-            <p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
-                Designed and implemented a comprehensive DevOps pipeline on Azure Cloud, leveraging Git for version control and Jenkins for CI/CD. Ensured code quality and security using SonarQube and Trivy, conducted rigorous testing and vulnerability scans. Utilized Docker for containerizing applications, automating build, test, and deployment stages, and provided support for cloud services including EOS object storage, VM networking, CDP backup, CDN, load balancer, GPU resource management, autoscaling, and DBaaS.
-            </p>
-        </div>
-        <div class="content">
-            <div class="card" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="400">
-                <div class="service-icon">
-                    <i class="fas fa-cloud"></i>
-                </div>
-                <div class="info">
-                    <h3>Azure DevOps Pipeline</h3>
-                    <p>Automated build, test, and deployment using Jenkins, SonarQube, Trivy, Docker, and Kubernetes. Integrated monitoring tools for operational efficiency.</p>
-                </div>
-            </div>
-            <div class="card" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
-                <div class="service-icon">
-                    <i class="fas fa-database"></i>
-                </div>
-                <div class="info">
-                    <h3>Cloud Services Support</h3>
-                    <p>Provided support for EOS object storage, VM networking, CDP backup, CDN, load balancer, GPU resource management, autoscaling, and DBaaS.</p>
-                </div>
-            </div>
-        </div>
-    </section>
+  <!-- Projects -->
+  <section class="projects" id="projects">
+    <h2 class="title">Projects</h2>
+    <div class="cards">
+      <div class="card" data-aos="flip-left">
+        <i class="fas fa-cloud"></i>
+        <h3>Azure DevOps Pipeline</h3>
+        <p>Automated build, test, and deploy with Jenkins, Docker, Kubernetes, SonarQube & Trivy.</p>
+      </div>
+      <div class="card" data-aos="flip-left">
+        <i class="fas fa-database"></i>
+        <h3>Cloud Services Support</h3>
+        <p>Worked with storage, networking, CDN, load balancers, autoscaling & DBaaS on cloud.</p>
+      </div>
+    </div>
+  </section>
 
-    <!-- Experience Section -->
-    <section class="work" id="experience">
-        <div class="title">
-            <h2 class="section-title" data-aos="fade-up" data-aos-duration="1000">Professional Experience</h2>
-        </div>
-        <div class="content">
-            <div class="card" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="200">
-                <div class="info">
-                    <h3>Analyst – Cognizant</h3>
-                    <span>Sep 2021 – Nov 2023</span>
-                    <ul>
-                        <li>Worked on life science projects, monitoring various franchises weekly.</li>
-                        <li>Designed and developed scripts using PySpark and SQL for efficient data processing.</li>
-                        <li>Managed incidents, raised tickets, and resolved issues through technical expertise.</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="card" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
-                <div class="info">
-                    <h3>Jr Executive – Scope E-Knowledge Center</h3>
-                    <span>July 2020 – Aug 2021</span>
-                    <ul>
-                        <li>Automated data extraction using Python, Requests, and Beautiful Soup.</li>
-                        <li>Handled various data formats including HTML, JSON, Excel, and CSV.</li>
-                        <li>Streamlined data extraction processes and improved efficiency.</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="card" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">
-                <div class="info">
-                    <h3>Python Developer-Analyst – AIT Resource</h3>
-                    <span>July 2019 – Aug 2020</span>
-                    <ul>
-                        <li>Utilized Scrapy for automating data extraction from URLs.</li>
-                        <li>Transformed extracted data using Python and Pandas.</li>
-                        <li>Handled multiple data formats and developed advanced spiders and crawlers.</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
+  <!-- Experience -->
+  <section class="experience" id="experience">
+    <h2 class="title">Experience</h2>
+    <div class="timeline">
+      <div class="item" data-aos="fade-right">
+        <h3>Associate – Cognizant</h3>
+        <span>2021 – 2023</span>
+        <p>Developed microservices, built APIs, and deployed apps on AWS with Docker & Kubernetes.</p>
+      </div>
+      <div class="item" data-aos="fade-left">
+        <h3>Jr. Executive – Scope E-Knowledge</h3>
+        <span>2020 – 2021</span>
+        <p>Automated web data pipelines using Python, BeautifulSoup, Pandas, and optimized processes.</p>
+      </div>
+      <div class="item" data-aos="fade-right">
+        <h3>Python Developer – AIT Resource</h3>
+        <span>2019 – 2020</span>
+        <p>Built scalable scraping solutions with Scrapy & Pandas, handling 1M+ weekly records.</p>
+      </div>
+    </div>
+  </section>
 
-    <!-- Education Section -->
-    <section class="about" id="education">
-        <div class="title reveal">
-            <h2 class="section-title" data-aos="fade-up" data-aos-duration="1000">Education</h2>
-        </div>
-        <div class="column col-right reveal">
-            <ul class="paragraph-text" data-aos="flip-up" data-aos-duration="1000" data-aos-delay="400">
-                <li><strong>DevOps for Cloud Computing</strong>, Lambton College, Toronto (Jan 2024 – Aug 2025)</li>
-                <li><strong>Master of Computer Application</strong>, Dhanalakshmi Srinivasan Engineering College, India (June 2017 – May 2019)</li>
-            </ul>
-        </div>
-    </section>
+  <!-- Contact -->
+  <section class="contact" id="contact">
+    <h2 class="title">Contact Me</h2>
+    <p><i class="fas fa-map-marker-alt"></i> Toronto, Canada</p>
+    <p><i class="fas fa-envelope"></i> <a href="mailto:vigneshwaripakirisamy@gmail.com">vigneshwaripakirisamy@gmail.com</a></p>
+    <p><i class="fas fa-phone"></i> +1 437-933-2304</p>
+  </section>
 
-    <!-- Contact Section -->
-    <section class="contact" id="contact">
-        <div class="title reveal">
-            <h2 class="section-title">Contact Me</h2>
-        </div>
-        <div class="content">
-            <div class="row">
-                <div class="card reveal">
-                    <div class="contact-icon">
-                        <i class="fas fa-map-marker-alt"></i>
-                    </div>
-                    <div class="info">
-                        <h3>Address</h3>
-                        <span>Toronto, Ontario, Canada</span>
-                    </div>
-                </div>
-                <div class="card reveal">
-                    <div class="contact-icon">
-                        <i class="fas fa-phone"></i>
-                    </div>
-                    <div class="info">
-                        <h3>Phone</h3>
-                        <span>+1-437-933-2304</span>
-                    </div>
-                </div>
-                <div class="card reveal">
-                    <div class="contact-icon">
-                        <i class="fas fa-envelope"></i>
-                    </div>
-                    <div class="info">
-                        <h3>Email Address</h3>
-                        <span><a href="mailto:vigneshwaripakirisamy@gmail.com">vigneshwaripakirisamy@gmail.com</a></span>
-                    </div>
-                </div>
-                <div class="card reveal">
-                    <div class="contact-icon">
-                        <i class="fas fa-globe"></i>
-                    </div>
-                    <div class="info">
-                        <h3>LinkedIn</h3>
-                        <span><a href="https://www.linkedin.com/in/vigneshwari-pakkirisami/" target="_blank">linkedin.com/in/vigneshwari-pakkirisami</a></span>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="contact-form reveal">
-                    <h3>Send Message</h3>
-                    <div class="input-box">
-                        <input type="text" name="" value="" placeholder="Name">
-                    </div>
-                    <div class="input-box">
-                        <input type="text" name="" value="" placeholder="Email">
-                    </div>
-                    <div class="input-box">
-                        <textarea name="name" rows="8" cols="80" placeholder="Message"></textarea>
-                    </div>
-                    <div class="input-box">
-                        <input type="submit" class="send-btn" name="" value="Send">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+  <footer>
+    <p>© 2025 Vigneshwari Pakkirisami | All Rights Reserved</p>
+  </footer>
 
-    <footer class="footer">
-        <span class="footer-title">Vigneshwari Pakkirisami</span>
-        <p>Copyright @2025. All Rights Reserved.</p>
-    </footer>
-
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-        AOS.init({offset:0});
-        const menuBtn = document.querySelector(".menu-btn");
-        const navigation = document.querySelector(".navigation");
-        const navigationItems = document.querySelectorAll(".navigation a");
-
-        menuBtn.addEventListener("click", () => {
-            menuBtn.classList.toggle("active");
-            navigation.classList.toggle("active");
-        });
-
-        window.addEventListener("scroll", function(){
-            const header = document.querySelector("header");
-            header.classList.toggle("sticky", window.scrollY > 0);
-        });
-
-        navigationItems.forEach((navigationItem) => {
-            navigationItem.addEventListener("click", () => {
-                menuBtn.classList.remove("active");
-                navigation.classList.remove("active");
-            });
-        });
-    </script>
+  <!-- Scripts -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <script>
+    AOS.init();
+    new Typed("#typing", {
+      strings: ["DevOps Engineer", "AWS Cloud Specialist", "Python Developer"],
+      typeSpeed: 80,
+      backSpeed: 50,
+      loop: true
+    });
+  </script>
 </body>
 </html>
