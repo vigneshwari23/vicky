@@ -77,8 +77,8 @@ header .navigation a:hover {
 }
 
 .hero .profile-img {
-  width: 150px;
-  height: 150px;
+  width: 350px;
+  height: 350px;
   border-radius: 50%;
   object-fit: cover;
   margin-bottom: 20px;
