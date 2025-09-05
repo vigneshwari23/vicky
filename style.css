@@ -28,13 +28,20 @@ header .navigation a:hover {color: #00d2ff;}
 
 /* Profile Image */
 .profile-img {
-  width: 160px;
-  height: 160px;
+  width: 220px;      /* Increased size */
+  height: 220px;     /* Keep it equal for perfect circle */
   border-radius: 50%;
   object-fit: cover;
-  border: 4px solid #00d2ff;
-  margin-bottom: 20px;
-  box-shadow: 0 0 20px rgba(0,210,255,0.4);
+  border: 6px solid #00d2ff;  /* Thicker border for visibility */
+  margin-bottom: 25px;
+  box-shadow: 0 0 25px rgba(0,210,255,0.6); /* Stronger glow */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Add hover effect for interaction */
+.profile-img:hover {
+  transform: scale(1.08);
+  box-shadow: 0 0 35px rgba(0,210,255,0.8);
 }
 
 /* Buttons */
