@@ -1,284 +1,126 @@
 <!DOCTYPE html>
-<html lang="en"> 
-<head> 
+<html lang="en">
+<head>
   <meta charset="UTF-8">
+  <title>Vigneshwari | Backend Developer</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Vigneshwari Pakkirisami Portfolio</title>
-  <link rel="stylesheet" href="style.css">
-  <!-- Icons -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
-  <!-- AOS Animation -->
-  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
+
   <style>
-    /* General */
-    * {margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', sans-serif;}
-    html {scroll-behavior: smooth;}
-    body {background: #0f2027; color: #fff;}
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: #0b0f1a;
+      color: #e6edf3;
+    }
 
-    /* Header */
     header {
-      position: fixed; top: 0; left: 0; width: 100%;
-      background: rgba(0,0,0,0.85); padding: 15px 80px;
-      display: flex; justify-content: space-between; align-items: center;
-      z-index: 999; transition: 0.3s;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.4);
+      padding: 20px 60px;
+      background: #111827;
+      display: flex;
+      justify-content: space-between;
     }
-    header .brand {color: #00d2ff; font-size: 1.6em; font-weight: bold; text-decoration: none;}
-    header .navigation a {
-      color: #fff; margin-left: 25px; text-decoration: none; position: relative; transition: 0.3s;
-    }
-    header .navigation a::after {
-      content: ""; position: absolute; width: 0%; height: 2px; background: #00d2ff;
-      left: 0; bottom: -5px; transition: 0.3s;
-    }
-    header .navigation a:hover {color: #00d2ff;}
-    header .navigation a:hover::after {width: 100%;}
 
-    /* Hero Section */
-    .hero {
-      height: 100vh;
-      display: flex; justify-content: center; align-items: center;
-      padding: 0 10%; text-align: center;
-      background: linear-gradient(-45deg, #00d2ff, #3a7bd5, #6a11cb, #2575fc);
-      background-size: 400% 400%;
-      animation: gradientBG 12s ease infinite;
+    header h1 {
+      color: #38bdf8;
     }
-    @keyframes gradientBG {
-      0% { background-position: 0% 50%; }
-      50% { background-position: 100% 50%; }
-      100% { background-position: 0% 50%; }
-    }
-    .hero-container {
-      display: flex; align-items: center; justify-content: space-between;
-      flex-wrap: wrap; gap: 50px; width: 100%; max-width: 1200px;
-    }
-    .hero-left {flex: 1; display: flex; justify-content: center;}
-    .profile-img {
-      width: 280px; height: 280px;
-      border-radius: 50%; object-fit: cover;
-      border: 6px solid #fff;
-      box-shadow: 0 0 40px rgba(0,210,255,0.7);
-      transition: transform 0.4s ease, box-shadow 0.4s ease;
-    }
-    .profile-img:hover {transform: scale(1.05); box-shadow: 0 0 50px rgba(0,210,255,1);}
-    .hero-right {flex: 1; text-align: left;}
-    .hero-right h1 {font-size: 2.8em; margin-bottom: 15px; color: #fff;}
-    .hero-right h1 span {color: #00d2ff;}
-    .hero-right h2 {font-size: 1.6em; color: #e0e0e0; margin-bottom: 30px;}
 
-    /* Buttons */
-    .buttons {display: flex; flex-wrap: wrap; gap: 15px; margin-bottom: 25px;}
-    .btn {
-      background: linear-gradient(90deg, #00d2ff, #3a7bd5);
-      color: #fff; padding: 12px 28px; border-radius: 30px;
-      text-decoration: none; font-weight: bold; transition: 0.3s;
+    nav a {
+      margin-left: 20px;
+      color: #ccc;
+      text-decoration: none;
     }
-    .btn:hover {box-shadow: 0 0 20px #00d2ff; transform: translateY(-2px);}
-    .resume-btn {background: transparent; border: 2px solid #00d2ff;}
-    .resume-btn:hover {background: #00d2ff; color: #000;}
 
-    /* Social Icons */
-    .social-icons {margin-top: 10px;}
-    .social-icons a {
-      color: #00d2ff; font-size: 26px; margin-right: 18px; transition: 0.3s;
+    section {
+      padding: 60px;
     }
-    .social-icons a:hover {color: #fff; transform: scale(1.2);}
 
-    /* Sections */
-    section {padding: 100px 10%; text-align: center;}
-    .title {font-size: 2em; margin-bottom: 40px; color: #00d2ff;}
-    .about p {max-width: 800px; margin: 0 auto; line-height: 1.6;}
+    h2 {
+      color: #38bdf8;
+    }
 
-    /* Skills */
-    .bars {max-width: 800px; margin: 0 auto;}
-    .bar {margin-bottom: 20px; text-align: left;}
-    .bar span {display:block; margin-bottom:5px; font-weight: bold;}
-    .progress { height: 10px; border-radius: 5px;
-      background: linear-gradient(90deg, #00d2ff, #3a7bd5); }
-
-    /* Projects */
-    .cards {display: flex; justify-content: center; gap: 20px; flex-wrap: wrap;}
     .card {
-      background: #112d4e; padding: 20px; border-radius: 12px;
-      width: 280px; text-align: center; transition: 0.3s;
+      background: #111827;
+      padding: 20px;
+      margin: 20px 0;
+      border-radius: 10px;
     }
-    .card i {font-size: 40px; color: #00d2ff; margin-bottom: 10px;}
-    .card:hover {transform: translateY(-8px); box-shadow: 0 8px 20px rgba(0,0,0,0.4);}
 
-    /* Experience */
-    .timeline {
-      max-width: 900px; margin: 0 auto; position: relative;
-      padding-left: 30px; border-left: 3px solid #00d2ff;
+    .tech {
+      color: #94a3b8;
+      font-size: 14px;
     }
-    .timeline .item {margin-bottom: 40px; padding-left: 20px; position: relative;}
-    .timeline .item::before {
-      content: ""; position: absolute; left: -12px; top: 10px;
-      width: 20px; height: 20px; background: #00d2ff; border-radius: 50%;
-      box-shadow: 0 0 10px rgba(0,210,255,0.5);
-    }
-    .timeline h3 {color:#00d2ff; margin-bottom: 5px;}
-    .timeline span {font-size: 0.9em; color: #bbb;}
-    .timeline ul {margin-top: 10px; padding-left: 20px; text-align: left;}
-    .timeline li {margin-bottom: 6px; line-height: 1.5;}
 
-    /* Contact */
-    .contact p {margin: 10px 0; font-size: 1.1em;}
-    .contact i {color:#00d2ff; margin-right: 10px;}
-
-    /* Footer */
-    footer { background: #000; text-align: center; padding: 20px;
-      font-size: 0.9em; color: #bbb; }
-
-    /* Responsive */
-    @media (max-width: 900px) {
-      header {padding: 15px 30px;}
-      .hero-container {flex-direction: column; text-align: center;}
-      .hero-right {text-align: center;}
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #111827;
+      color: #888;
     }
   </style>
 </head>
+
 <body>
-  <!-- Header -->
-  <header>
-    <a href="#" class="brand">Vigneshwari</a>
-    <nav class="navigation">
-      <a href="#home">Home</a>
-      <a href="#about">About</a>
-      <a href="#skills">Skills</a>
-      <a href="#projects">Projects</a>
-      <a href="#experience">Experience</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>
 
-  <!-- Hero Section -->
-  <section class="hero" id="home">
-    <div class="hero-container" data-aos="fade-up">
-      <div class="hero-left">
-        <img src="profile.jpg" alt="Vigneshwari Pakkirisami" class="profile-img" />
-      </div>
-      <div class="hero-right">
-        <h1>Hello, I'm <span>Vigneshwari Pakkirisami</span></h1>
-        <h2><span id="typing"></span></h2>
-        <div class="buttons">
-          <a href="#about" class="btn">More About Me</a>
-          <a href="Vigneshwari_Pakkirisami_Resume.pdf" download class="btn resume-btn">
-            <i class="fas fa-file-download"></i> Download Resume
-          </a>
-        </div>
-        <div class="social-icons">
-          <a href="https://github.com/vigneshwari23" target="_blank"><i class="fab fa-github"></i></a>
-          <a href="https://www.linkedin.com/in/vigneshwari-pakkirisami/" target="_blank"><i class="fab fa-linkedin"></i></a>
-          <a href="mailto:vigneshwaripakirisamy@gmail.com"><i class="fas fa-envelope"></i></a>
-        </div>
-      </div>
-    </div>
-  </section>
+<header>
+  <h1>Vigneshwari</h1>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#skills">Skills</a>
+  </nav>
+</header>
 
-  <!-- About -->
-  <section class="about" id="about">
-    <h2 class="title">About Me</h2>
-    <p data-aos="fade-right">
-      I am a Python Developer & DevOps Engineer with 4+ years of experience building scalable applications and automating deployments. Skilled in AWS, Docker, Kubernetes, Terraform, CI/CD pipelines, and scripting.
+<section id="about">
+  <h2>About Me</h2>
+  <p>
+    Backend Software Developer with experience in building scalable APIs, cloud-native applications, and data-driven systems.
+    Skilled in Python, AWS, Docker, and Kubernetes with strong focus on system design, reliability, and performance.
+  </p>
+</section>
+
+<section id="skills">
+  <h2>Technical Skills</h2>
+  <p><strong>Languages:</strong> Python, Java</p>
+  <p><strong>Backend:</strong> REST APIs, Microservices, FastAPI</p>
+  <p><strong>Cloud:</strong> AWS (EC2, S3, IAM, RDS)</p>
+  <p><strong>DevOps:</strong> Docker, Kubernetes, CI/CD</p>
+  <p><strong>Databases:</strong> PostgreSQL, MongoDB</p>
+</section>
+
+<section id="projects">
+  <h2>Projects</h2>
+
+  <div class="card">
+    <h3>Board Game Backend System</h3>
+    <p>
+      Designed and developed a backend system with role-based authentication, REST APIs, and cloud deployment.
+      Implemented secure user access and scalable architecture.
     </p>
-  </section>
+    <p class="tech">Tech: Spring Boot, AWS EC2, MySQL, Docker</p>
+  </div>
 
-  <!-- Skills -->
-  <section class="skills" id="skills">
-    <h2 class="title">Technical Skills</h2>
-    <div class="bars">
-      <div class="bar"><span>Python (Flask, FastAPI, Pandas, NumPy)</span><div class="progress" style="width:90%"></div></div>
-      <div class="bar"><span>AWS Cloud (EC2, S3, IAM, Lambda, RDS, CloudWatch, EKS)</span><div class="progress" style="width:90%"></div></div>
-      <div class="bar"><span>DevOps (CI/CD, Jenkins, GitHub Actions, GitLab CI/CD)</span><div class="progress" style="width:85%"></div></div>
-      <div class="bar"><span>Docker & Kubernetes</span><div class="progress" style="width:85%"></div></div>
-      <div class="bar"><span>Infrastructure as Code (Terraform, CloudFormation, Ansible)</span><div class="progress" style="width:80%"></div></div>
-      <div class="bar"><span>Databases (MySQL, PostgreSQL, SQL Server, MongoDB)</span><div class="progress" style="width:75%"></div></div>
-      <div class="bar"><span>Big Data & Messaging (PySpark, RabbitMQ, Apache Kafka, Spark)</span><div class="progress" style="width:70%"></div></div>
-      <div class="bar"><span>Testing & Security (PyTest, SonarQube, Trivy, Selenium, Postman)</span><div class="progress" style="width:70%"></div></div>
-      <div class="bar"><span>Monitoring & Logging (Prometheus, Grafana, ELK Stack)</span><div class="progress" style="width:65%"></div></div>
-      <div class="bar"><span>Web Tech (JavaScript, TypeScript, HTML5, CSS3, React.js)</span><div class="progress" style="width:65%"></div></div>
-      <div class="bar"><span>Other Tools (BeautifulSoup, Scrapy, Fabric, Linux/Unix)</span><div class="progress" style="width:70%"></div></div>
-    </div>
-  </section>
+  <div class="card">
+    <h3>CI/CD Pipeline Automation</h3>
+    <p>
+      Built an automated CI/CD pipeline integrating build, testing, security scanning, and deployment to Kubernetes.
+      Improved deployment reliability and reduced manual errors.
+    </p>
+    <p class="tech">Tech: Jenkins, Docker, Kubernetes, SonarQube, Trivy</p>
+  </div>
 
-  <!-- Projects -->
-  <section class="projects" id="projects">
-    <h2 class="title">Projects</h2>
-    <div class="cards">
-      <div class="card" data-aos="flip-left">
-        <i class="fas fa-cloud"></i>
-        <h3>Azure DevOps Pipeline</h3>
-        <p>Automated build, test, and deploy with Jenkins, Docker, Kubernetes, SonarQube & Trivy.</p>
-      </div>
-      <div class="card" data-aos="flip-left">
-        <i class="fas fa-database"></i>
-        <h3>Cloud Services Support</h3>
-        <p>Worked with storage, networking, CDN, load balancers, autoscaling & DBaaS on cloud.</p>
-      </div>
-    </div>
-  </section>
+  <div class="card">
+    <h3>Data Processing Pipeline</h3>
+    <p>
+      Developed data ingestion and processing pipelines handling large datasets with optimized performance.
+    </p>
+    <p class="tech">Tech: Python, Pandas, AWS S3</p>
+  </div>
 
-  <!-- Experience -->
-  <section class="experience" id="experience">
-    <h2 class="title">Professional Experience</h2>
-    <div class="timeline">
-      <div class="item" data-aos="fade-right">
-        <h3>Associate – Cognizant</h3>
-        <span>Sep 2021 – Nov 2023</span>
-        <ul>
-          <li>Designed and deployed Python-based microservices, improving throughput by 30%.</li>
-          <li>Built and maintained 15+ REST APIs with secure integration across teams.</li>
-          <li>Optimized AWS resources (S3, EC2, IAM), reducing infrastructure cost by 15%.</li>
-          <li>Containerized applications with Docker & Kubernetes, ensuring 99.9% uptime.</li>
-          <li>Implemented SonarQube & automated testing pipelines, reducing release defects by 20%.</li>
-        </ul>
-      </div>
-      <div class="item" data-aos="fade-left">
-        <h3>Jr. Executive – Scope E-Knowledge Center</h3>
-        <span>Jul 2020 – Aug 2021</span>
-        <ul>
-          <li>Automated web data extraction with Python, BeautifulSoup & Requests, cutting manual work by 40%.</li>
-          <li>Processed large datasets (CSV, Excel, JSON) with Pandas, accelerating reports by 35%.</li>
-          <li>Standardized pipelines, reducing downtime from 3 hours to 1.5 hours daily.</li>
-          <li>Created reusable scripts that cut onboarding time for new developers by 25%.</li>
-        </ul>
-      </div>
-      <div class="item" data-aos="fade-right">
-        <h3>Python Developer – AIT Resource</h3>
-        <span>Jul 2019 – Aug 2020</span>
-        <ul>
-          <li>Developed large-scale web scraping with Scrapy & BeautifulSoup (1M+ records weekly).</li>
-          <li>Built reusable Python modules, reducing maintenance effort by 30%.</li>
-          <li>Cleaned & transformed datasets with Pandas, improving analytics accuracy by 20%.</li>
-          <li>Delivered structured datasets that improved reporting speed & decision-making.</li>
-        </ul>
-      </div>
-    </div>
-  </section>
+</section>
 
-  <!-- Contact -->
-  <section class="contact" id="contact">
-    <h2 class="title">Contact Me</h2>
-    <p><i class="fas fa-map-marker-alt"></i> Toronto, Canada</p>
-    <p><i class="fas fa-envelope"></i> <a href="mailto:vigneshwaripakirisamy@gmail.com">vigneshwaripakirisamy@gmail.com</a></p>
-    <p><i class="fas fa-phone"></i> +1 437-933-2304</p>
-  </section>
+<footer>
+  <p>© 2026 Vigneshwari | Backend Developer</p>
+</footer>
 
-  <footer>
-    <p>© 2025 Vigneshwari Pakkirisami | All Rights Reserved</p>
-  </footer>
-
-  <!-- Scripts -->
-  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-  <script>
-    AOS.init();
-    new Typed("#typing", {
-      strings: ["DevOps Engineer", "AWS Cloud Specialist", "Python Developer"],
-      typeSpeed: 80,
-      backSpeed: 50,
-      loop: true
-    });
-  </script>
 </body>
 </html>
